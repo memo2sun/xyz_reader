@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+repositories {
+    google()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "androidx.legacy:legacy-support-v4:$androidSupportVersion"
+    implementation "androidx.legacy:legacy-support-v13:$androidSupportVersion"
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation "androidx.palette:palette:$androidSupportVersion"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.cardview:cardview:$androidSupportVersion"
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation files('libs/volley.jar')
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Butter Knife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+
+}
