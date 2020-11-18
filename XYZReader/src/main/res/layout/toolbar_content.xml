@@ -6,7 +6,7 @@
     android:orientation="vertical">
     <TextView
         android:id="@+id/article_title"
-        style="?android:attr/textAppearanceLarge"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
@@ -18,8 +18,8 @@
 
     <TextView
         android:id="@+id/article_byline"
-        style="?android:attr/textAppearanceSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         android:textColor="#8fff" />
 </LinearLayout>

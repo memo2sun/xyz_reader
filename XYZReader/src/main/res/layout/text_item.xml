@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/detail_body_bottom_margin"
+    android:paddingTop="@dimen/detail_body_top_margin">
 
     <TextView
         android:id="@+id/article_body"
-        style="?android:attr/textAppearanceMedium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="@dimen/detail_body_left_right_margin"
+        android:layout_marginRight="@dimen/detail_body_left_right_margin"
         android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
-        android:paddingBottom="@dimen/detail_body_bottom_margin"
         android:textIsSelectable="true"
         android:autoLink="web"
         android:linksClickable="true"
-        android:textColorLink="@color/theme_accent"
         android:textSize="@dimen/detail_body_text_size" />
 
 </FrameLayout>
