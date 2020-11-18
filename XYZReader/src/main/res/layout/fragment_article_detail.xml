@@ -18,10 +18,10 @@
             app:contentScrim="?attr/colorPrimaryDark"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <ImageView
+            <com.example.xyzreader.ui.ThreeTwoImageView
                 android:id="@+id/photo"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="0dp"
                 android:contentDescription="@string/article_image"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
@@ -55,12 +55,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:listitem="@layout/text_item"></androidx.recyclerview.widget.RecyclerView>
+        tools:listitem="@layout/text_item"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/share_fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
